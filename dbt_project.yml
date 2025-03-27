@@ -1,1 +1,12 @@
+name: my_dbt_project
+version: 1.0
+
+config-version: 2
+
+profile: saikumar  # Matches the profile name in your profiles.yml
+
+target-path: redshift  # Directory where compiled models will be saved
+models:
+  my_dbt_project:
+    +materialized: view  # Default materialization for models in this project
 
